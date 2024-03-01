@@ -1,0 +1,6 @@
+git clone
+cd google-maps-scraper
+go mod download
+go build
+
+./google-maps-scraper -input example-queries.txt -results malls-in-tier1and2.csv -email -exit-on-inactivity 3m
